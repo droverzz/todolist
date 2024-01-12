@@ -1,0 +1,37 @@
+<!--Ratthaphoom Patthanayonchai 640510678 -->
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+<div class="container">
+    <div class="todo-app">
+        <h2>Public feed<img src="https://cdn.glitch.global/4fa7e140-1bc3-4ef9-ad38-23fb84a01b2d/cat.png?v=1705078263092"> </h2>
+        <div class="row">
+            <input type="text" id="input-name" placeholder="Who are you?">
+        </div>
+        <div class="row">
+            
+            <input type="text" id="input-box" placeholder="What needs to be done?">
+          
+        </div>
+        <button onclick="addTask()">Add</button>
+        <div class="alert" id="alert" hidden="hidden">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            New tasks have arrived!
+        </div>
+        
+        <ul id="list-container">
+
+        </ul>
+    </div>
+    <div class="space">
+        <img src="https://cdn.glitch.global/4fa7e140-1bc3-4ef9-ad38-23fb84a01b2d/IMG_3918.gif?v=1705078299367">
+    </div>
+</div>
+<script src="todo.js"></script>
+</body>
+</html>
